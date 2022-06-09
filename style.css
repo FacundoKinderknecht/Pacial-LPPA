@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(165, 240, 215);
+    background: linear-gradient(to right, aquamarine, lightblue);
     height: 100%;
     align-items: center;
     text-align: center;
@@ -25,7 +25,6 @@ p{
 }
 footer{
     background-color: grey;
-    position: absolute;
     bottom: 0;
     width: 100%;
 }
