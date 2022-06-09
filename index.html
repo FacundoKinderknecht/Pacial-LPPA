@@ -7,12 +7,23 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <script src="/logic.js" defer></script>
+    <script src="https://kit.fontawesome.com/61e65185c3.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
     <header>
         <h1>Paraiso Natural</h1>
+        <i class="fa-solid fa-bars"></i>
     </header>
+    <nav>
+        <li>
+            <a href="#">Nuestras granjas</a>
+            <a href="#">Expertos Veterinarios</a>
+            <a href="#">Nuestra Historia</a>
+            <a href="#">Videos</a>
+            <a href="#">Info</a>
+        </li>
+    </nav>
     <main>
         <form id="form" action="/">
         <div class="nombre">
@@ -57,26 +68,23 @@
             </select>
             <div class="error"></div>
         </div>
-        <p>
-            Selecciona que animales quiere que cuidemos:
-            <br><br>
+        <div class="check">
+            <p>Selecciona que animales quiere que cuidemos:</p>
             <input type="checkbox" name="vaca"> Vaca<br>
             <input type="checkbox" name="cerdo"> Cerdo<br>
             <input type="checkbox" name="caballo"> Caballo<br>
-            <input type="checkbox" name="obeja"> Oveja<br>
+            <input type="checkbox" name="oveja"> Oveja<br>
             <input type="checkbox" name="gallinas"> Gallinas<br>
             <input type="checkbox" name="otro"> Otro 
             <div class="error"></div>
-        </p>
+        </div>
         <div class="observaciones">
             <label for="observaciones">observaciones:</label>
-            <input type="text" style="width: 30%; height: 7rem;" name="observaciones" id="observaciones">
-            <div class="error"></div>
+            <input type="text" style="width: 60%; height: 100px;" name="observaciones" id="observaciones">
         </div>
         <div class="botones">
             <input type="submit" value="Aceptar">
             <input type="reset" value="Limpiar">
-            <div class="error"></div>
         </div>  
     </form>
 </main>

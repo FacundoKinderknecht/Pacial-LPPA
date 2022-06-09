@@ -6,6 +6,7 @@ const edad = document.getElementById('edad');
 const sexo = document.getElementById('sexo');
 const pais = document.getElementById('pais');
 
+
 form.addEventListener('submit', e => {
     e.preventDefault();
 
@@ -40,7 +41,6 @@ const validaciones = () => {
     const valornombre = nombre.value.trim();
     const valorapellido = apellido.value.trim();
     const valoremail = email.value.trim();
-
 
 
     if(valornombre === '') {
@@ -81,6 +81,4 @@ const validaciones = () => {
     } else {
         setSuccess(pais);
     }
-    
-
 }

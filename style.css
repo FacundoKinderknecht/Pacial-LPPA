@@ -1,5 +1,13 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.fa-solid{
+    display: none;
+}
 body{
-    background: linear-gradient(to right, aquamarine, lightblue);
+    background-color: rgb(0, 119, 159);
     height: 100%;
     align-items: center;
     text-align: center;
@@ -10,11 +18,31 @@ header{
     border-bottom: black 2px solid;
     padding: 1rem;
     font-size: 400%;
-    background-color: cadetblue;
+    background: linear-gradient(to top, rgb(4, 126, 83), rgb(0, 190, 126), rgb(4, 126, 83));   
+}
+nav{
+    background: linear-gradient(to top, rgb(4, 126, 83), rgb(0, 190, 126), rgb(4, 126, 83));
+    display: block;
+    border-bottom: black 2px solid;
+    text-decoration: none;
+}
+li{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+a{
+    text-decoration: none;
+    color: black;
+    padding: 0% 5%;
 }
 main{
     display: inline-block;
     width: 70%;
+    padding: 2rem;
+}
+form{
+    background-color: rgb(207, 226, 227);  border: black solid 2px;
     padding: 2rem;
 }
 div{
@@ -27,4 +55,29 @@ footer{
     background-color: grey;
     bottom: 0;
     width: 100%;
+}
+@media only screen and (max-width:768px){
+
+    nav{
+        display: none;
+    }
+    
+    header{
+    background-position: center;
+    background-size: 20%;
+    display: flexbox;
+    text-align: center;
+    width: 100%;
+    padding: 0.3rem;
+    }
+
+    .fa-solid{
+        display: inline;
+        position: absolute;
+        color: black;
+        top: 1rem;
+        right: 0.5rem;
+        font-size: 2.5rem;
+    }
+    
 }
