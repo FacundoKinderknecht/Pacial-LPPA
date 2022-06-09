@@ -1,0 +1,2 @@
+# Pacial-LPPA
+Primer parcial
