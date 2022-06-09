@@ -1,10 +1,10 @@
+.fa-bars{
+    display: none;
+}
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-.fa-solid{
-    display: none;
 }
 body{
     background-color: rgb(0, 119, 159);
@@ -71,8 +71,8 @@ footer{
     padding: 0.3rem;
     }
 
-    .fa-solid{
-        display: inline;
+    .fa-bars{
+        display: inline ;
         position: absolute;
         color: black;
         top: 1rem;
