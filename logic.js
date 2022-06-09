@@ -64,6 +64,13 @@ const validaciones = () => {
     } else {
         setSuccess(email);
     }
+    if(edad.value === '') {
+        setError(edad, 'Debe ingresar su edad');
+    } else if (edad.value < 0 || edad.value >100 ) {
+        setError(edad, 'Debe ingresar una edad valida')
+    } else {
+        setSuccess(edad);
+    }
     
 
 }
