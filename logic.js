@@ -71,6 +71,11 @@ const validaciones = () => {
     } else {
         setSuccess(edad);
     }
+    if(pais.value === 'default') {
+        setError(pais, 'Debe seleccionar un pais');
+    } else {
+        setSuccess(pais);
+    }
     
 
 }
