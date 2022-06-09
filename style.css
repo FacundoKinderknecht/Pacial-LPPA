@@ -1,0 +1,27 @@
+body{
+    background-color: rgb(165, 240, 215);
+    height: 100%;
+    align-items: center;
+    text-align: center;
+}
+header{
+    width: 100%;
+    border-bottom: black 2px solid;
+    padding: 1rem;
+    font-size: 400%;
+    background-color: cadetblue;
+}
+main{
+    display: inline-block;
+    width: 70%;
+    padding: 2rem;
+}
+div{
+    padding: 0.5rem;
+}
+p{
+    padding: 0.5rem;
+}
+footer{
+    background-color: grey;
+}

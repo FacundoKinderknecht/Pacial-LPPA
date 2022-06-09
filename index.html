@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="logic"  href="logic.js">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Paraiso Natural</h1>
+    </header>
+    <main>
+        <div class="nombre">
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre-usuario">
+        </div>
+        <div class="apellido">
+            <label for="apellido">Apellido:</label>
+            <input type="text" name="apellido" id="apellido-usuario">
+        </div>
+        <div class="eMail">
+            <label for="eMail">Correo:</label>
+            <input type="text" name="eMail" id="correo-usuario">
+        </div>
+        <div class="edad">
+            <label for="edad">Edad:</label>
+            <input type="number" name="edad" id="edad-usuario">
+        </div>
+        <div class="sexo">
+            <label for="sexo">Sexo:</label>
+            <select name="cars" id="sexo-usuario">
+                <option value="hombre">Hombre</option>
+                <option value="mujer">Mujer</option>
+                <option value="no binario">Changooooo</option>
+                <option value="otro">Otro</option>
+            </select>
+        </div>
+        <div class="pais">
+            <label for="pais">País:</label>
+            <select name="paises" id="pais-usuario">
+                <option value="argentina">Argentina</option>
+                <option value="mexico">Mexico</option>
+                <option value="brasil">Brazil</option>
+                <option value="estadosUnidos">Estados Unidos</option>
+            </select>
+        </div>
+        <p>
+            Selecciona que animales quiere que cuidemos:
+            <br><br>
+            <input type="checkbox" name="vaca"> Vaca<br>
+            <input type="checkbox" name="cerdo"> Cerdo<br>
+            <input type="checkbox" name="caballo"> Caballo<br>
+            <input type="checkbox" name="obeja"> Oveja<br>
+            <input type="checkbox" name="gallinas"> Gallinas<br>
+            <input type="checkbox" name="otro"> Otro 
+        </p>
+        <div class="observaciones">
+            <label for="observaciones">observaciones:</label>
+            <input type="text" name="observaciones" id="observaciones-usuario">
+        </div>
+        <div class="opciones">
+            <input type="submit" value="Aceptar">
+            <input type="reset" value="Limpiar">
+        </div>  
+    </main>
+    <footer>
+        <p>Gracias por confiar</p>
+    </footer>
+</body>
+</html>
