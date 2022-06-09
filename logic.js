@@ -12,6 +12,11 @@ form.addEventListener('submit', e => {
     validaciones();
 });
 
+const validaremail = email => {
+    const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+}
+
 const setError = (element, message) => {
     const inputControl = element.parentElement;
     const errorDisplay = inputControl.querySelector('.error');
@@ -51,6 +56,13 @@ const validaciones = () => {
         setError(apellido, 'El apellido debe contener al menos 3 caracteres'); 
     }else {
         setSuccess(apellido);
+    }
+    if(valoremail === '' || valoremail === null) {
+        setError(email, 'Debe ingresar un email');
+    } else if (!validaremail(valoremail)) {
+        setError(email, 'El email debe ser un email valido');
+    } else {
+        setSuccess(email);
     }
     
 
