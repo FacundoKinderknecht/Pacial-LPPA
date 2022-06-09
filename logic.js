@@ -71,6 +71,11 @@ const validaciones = () => {
     } else {
         setSuccess(edad);
     }
+    if (sexo.value === 'default') {
+        setError(sexo, 'Por favor seleccione su sexo')
+    }else{
+        setSuccess(sexo);
+    }
     if(pais.value === 'default') {
         setError(pais, 'Debe seleccionar un pais');
     } else {
