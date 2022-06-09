@@ -30,11 +30,6 @@ const setSuccess = element => {
     inputControl.classList.remove('error');
 };
 
-const validaremail = email => {
-    const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return re.test(String(email).toLowerCase());
-}
-
 const validaciones = () => {
     
     const valornombre = nombre.value.trim();
@@ -49,6 +44,13 @@ const validaciones = () => {
         setError(nombre, 'El nombre debe contener al menos 3 caracteres');
     } else {
         setSuccess(nombre);
+    }
+    if(valorapellido === '') {
+        setError(apellido, 'Debe ingresar su apellido');
+    }else if(valorapellido.length < 3) {
+        setError(apellido, 'El apellido debe contener al menos 3 caracteres'); 
+    }else {
+        setSuccess(apellido);
     }
     
 
